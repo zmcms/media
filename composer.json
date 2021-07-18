@@ -1,0 +1,33 @@
+{
+	"name": "zmcms/media",
+	"description": "Modul zarzadzajacy mediami w zerwisie ZMCMS",
+	"authors": [
+		{
+		"name": "Piotr Szkudlarek",
+		"email": "pszkudlarek@zoltanmultimedia.pl"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Zmcms\\Media\\": "src/",
+			"Zmcms\\Media\\Backend\\Controllers\\": "src/backend/controllers/",
+			"Zmcms\\Media\\Backend\\Db\\": "src/backend/db/",
+			"Zmcms\\Media\\Backend\\Middleware\\": "src/backend/middleware/",
+			"Zmcms\\Media\\Backend\\Routes\\": "src/backend/routes/",
+			"Zmcms\\Media\\Frontend\\Controllers\\": "src/frontend/controllers/",
+			"Zmcms\\Media\\Frontend\\Db\\": "src/frontend/db/",
+			"Zmcms\\Media\\Frontend\\Middleware\\": "src/frontend/middleware/",
+			"Zmcms\\Media\\Frontend\\Routes\\": "src/frontend/routes/",
+			"Zmcms\\Media\\Migrations\\": "src/migrations/"
+		},
+		"files": ["src/helpers.php"]
+		},
+		"extra": {
+			"laravel": {
+			"providers": [
+				"Zmcms\\Media\\ZmcmsMediaServiceProvider"
+			]
+		}
+	},
+	"require": {}
+}
